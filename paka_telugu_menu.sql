@@ -194,6 +194,86 @@ select*
 from pakka_telugu_menu1
 where spice_level="high" and calories>600;
 
+SELECT *
+FROM pakka_telugu_menu1
+WHERE price BETWEEN 200 AND 350
+AND spice_level = 'High'
+AND category IN ('Non Veg Starter','Non Veg Biryani');
+
+
+
+SELECT *
+FROM pakka_telugu_menu1
+WHERE price > 200
+AND rating > 4.5
+AND category NOT IN ('Veg Soup');
+
+
+
+SELECT *
+FROM pakka_telugu_menu1
+WHERE item_name LIKE '%Chicken%'
+AND price < 300
+AND spice_level IN ('Medium','High');
+
+
+SELECT *
+FROM pakka_telugu_menu1
+WHERE is_veg = TRUE
+AND calories BETWEEN 200 AND 700
+AND price <= 250;
+
+
+SELECT *
+FROM pakka_telugu_menu1
+WHERE rating >= 4.6
+AND preparation_time < 25
+AND category IN ('Veg Starter','Non Veg Starter');
+
+
+
+SELECT *
+FROM pakka_telugu_menu1
+WHERE (price > 250 OR calories > 800)
+AND spice_level != 'Low';
+
+
+FROM pakka_telugu_menu1
+WHERE item_name LIKE 'C%'
+AND rating > 4.5
+AND category IN ('Non Veg Starter','Non Veg Biryani');
+
+
+
+SELECT *
+FROM pakka_telugu_menu1
+WHERE price BETWEEN 150 AND 300
+AND calories < 600
+AND category NOT IN ('Veg Soup');
+
+
+SELECT *
+FROM pakka_telugu_menu1
+WHERE spice_level = 'High'
+AND rating BETWEEN 4.5 AND 5
+AND price > 200;
+
+
+
+SELECT *
+FROM pakka_telugu_menu1
+WHERE category LIKE '%Biryani%'
+AND price >= 250
+AND rating > 4.6;
+
+
+
+
+
+
+
+
+
 
 
 
