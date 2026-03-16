@@ -1,4 +1,4 @@
-create database student;
+create database students;
 use students;
 
 create table students(
