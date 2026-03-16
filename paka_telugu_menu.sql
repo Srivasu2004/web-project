@@ -237,7 +237,7 @@ FROM pakka_telugu_menu1
 WHERE (price > 250 OR calories > 800)
 AND spice_level != 'Low';
 
-
+select*
 FROM pakka_telugu_menu1
 WHERE item_name LIKE 'C%'
 AND rating > 4.5
